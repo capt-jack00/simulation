@@ -4,6 +4,7 @@
 class Bus{
     private:
         int capacity;
+        bool isBusy = false;
 
     public:
         Bus(){
@@ -15,4 +16,5 @@ class Bus{
             std::cout << "New bus created with capacity for: " << Bus::capacity << " passangers" << std::endl;
         }
         void collectPassengers(Station &station);
+        bool isBusBusy();
 };
