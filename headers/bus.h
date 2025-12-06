@@ -7,6 +7,7 @@ class Bus{
         bool isBusy = false;
 
     public:
+        int collectDay;
         Bus(){
             std::random_device rd;
             std::mt19937 gen(rd());
