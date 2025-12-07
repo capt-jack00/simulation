@@ -5,6 +5,8 @@
 class Station {
 
 public:
+    int passangers_waiting;
+
     Station(){
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -17,8 +19,7 @@ public:
         std::cout << std::endl;
     }
 
-    int passangers_waiting;
-    void shrinkPassangersByAmnt(int amnt);
-    void shrinkPassangersToAmnt(int amnt);
+    bool shrinkPassangersByAmnt(int amnt);
+    bool shrinkPassangersToAmnt(int amnt);
     int getPassangersWaiting();
 };
