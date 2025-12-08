@@ -10,7 +10,7 @@ public:
     Station(){
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<> ran(0, 100);
+        std::uniform_int_distribution<> ran(0, 50);
 
         passangers_waiting = ran(gen);
 
@@ -19,7 +19,8 @@ public:
         std::cout << std::endl;
     }
 
-    bool shrinkPassangersByAmnt(int amnt);
-    bool shrinkPassangersToAmnt(int amnt);
+    void shrinkPassangersByAmnt(int amnt);
+    void shrinkPassangersToAmnt(int amnt);
+    bool canBeShrinked();
     int getPassangersWaiting();
 };

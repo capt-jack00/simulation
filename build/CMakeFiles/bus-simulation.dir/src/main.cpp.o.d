@@ -1,4 +1,4 @@
-CMakeFiles/simulation.dir/src/main.cpp.o: \
+CMakeFiles/bus-simulation.dir/src/main.cpp.o: \
  /home/tytus/Documents/_repos/bus-simulation/src/main.cpp \
  /usr/include/stdc-predef.h \
  /home/tytus/Documents/_repos/bus-simulation/src/../headers/station.h \

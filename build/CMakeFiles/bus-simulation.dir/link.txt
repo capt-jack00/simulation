@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/bus-simulation.dir/link.d "CMakeFiles/bus-simulation.dir/src/main.cpp.o" "CMakeFiles/bus-simulation.dir/src/station.cpp.o" "CMakeFiles/bus-simulation.dir/src/bus.cpp.o" -o bus-simulation

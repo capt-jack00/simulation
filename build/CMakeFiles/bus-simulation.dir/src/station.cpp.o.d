@@ -1,5 +1,5 @@
-CMakeFiles/simulation.dir/src/main.cpp.o: \
- /home/tytus/Documents/_repos/bus-simulation/src/main.cpp \
+CMakeFiles/bus-simulation.dir/src/station.cpp.o: \
+ /home/tytus/Documents/_repos/bus-simulation/src/station.cpp \
  /usr/include/stdc-predef.h \
  /home/tytus/Documents/_repos/bus-simulation/src/../headers/station.h \
  /usr/include/c++/15.2.1/random \
@@ -180,10 +180,4 @@ CMakeFiles/simulation.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc \
- /home/tytus/Documents/_repos/bus-simulation/src/../headers/bus.h \
- /home/tytus/Documents/_repos/bus-simulation/src/../headers/main.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
- /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h
+ /usr/include/c++/15.2.1/bits/istream.tcc

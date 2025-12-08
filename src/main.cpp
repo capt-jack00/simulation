@@ -14,15 +14,12 @@ int main(){
 
     Bus bus;
 
-    //TODO: Extend this loop in functionality. 
-    // This loop below is only a barebone 
     while(true){
         std::cout << "Day: " << day << std::endl;
         bus.collectPassengers(station);
 
-        //std::random_device dev;
-        //std::mt19937 gen(dev());
-        //std::uniform_int_distribution<> ran(0, 100);
+        //TODO: Make the program stop the loop when the station has been empty for more than 8 days
+        //TODO: Add slight colors using termcolor to improve readability
         day++;
         sleep(1);
     }

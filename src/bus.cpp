@@ -9,7 +9,6 @@ bool Bus::isBusBusy(){
     return isBusy;
 }
 
-//TODO: Fix bus displaying info about taken passangers. Issue is described below 
 void Bus::collectPassengers(Station &station) {
     int cooldown = 3;
     if(isBusy){
@@ -22,10 +21,9 @@ void Bus::collectPassengers(Station &station) {
     else{
         std::cout << "Collecting passengers..." << std::endl;
         if(station.getPassangersWaiting() >= Bus::capacity){
-            // Here the passangers waiting number is getting shrinked by amount BEFORE it will even display
-            //the information about taken passangers
-            if(station.shrinkPassangersByAmnt(Bus::capacity)){
+            if(station.canBeShrinked()){
                 std::cout << "Bus took " << Bus::capacity << " passangers from station" << std::endl;
+                station.shrinkPassangersByAmnt(Bus::capacity);
                 std::cout << "Remaining passangers: " << station.getPassangersWaiting() << std::endl;
                 isBusy = true;
                 collectDay = day;
@@ -38,11 +36,9 @@ void Bus::collectPassengers(Station &station) {
 
         }
         else if(station.getPassangersWaiting() < Bus::capacity){
-            // Here applies the same issue as above
-            if(station.shrinkPassangersToAmnt(0)){
-                //The passangers_waiting variable is already equal to 0 so the bus is telling us
-                //that he took 0 passangers even if he for example took 10 of them
+            if(station.canBeShrinked()){
                 std::cout << "Bus took " << station.getPassangersWaiting() << " passangers from station" << std::endl;
+                station.shrinkPassangersToAmnt(0);
                 std::cout << "Remaining passangers: " << station.getPassangersWaiting() << std::endl;
                 isBusy = true;
                 collectDay = day;
