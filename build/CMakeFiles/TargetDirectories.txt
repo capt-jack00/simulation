@@ -1,3 +1,0 @@
-/home/tytus/Documents/_repos/bus-simulation/build/CMakeFiles/simulation.dir
-/home/tytus/Documents/_repos/bus-simulation/build/CMakeFiles/edit_cache.dir
-/home/tytus/Documents/_repos/bus-simulation/build/CMakeFiles/rebuild_cache.dir
