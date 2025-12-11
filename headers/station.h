@@ -19,6 +19,7 @@ public:
         std::cout << std::endl;
     }
 
+    void refill(int amnt);
     void shrinkPassangersByAmnt(int amnt);
     void shrinkPassangersToAmnt(int amnt);
     bool canBeShrinked();

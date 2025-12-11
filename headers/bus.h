@@ -7,6 +7,7 @@ class Bus{
         bool isBusy = false;
 
     public:
+        long peopleTransported = 0;
         int collectDay;
         Bus(){
             std::random_device rd;

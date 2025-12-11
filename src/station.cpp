@@ -3,6 +3,12 @@
 #include <iostream>
 
 //TODO: Make station be able to refill with passangers
+
+void Station::refill(int amnt){
+    passangers_waiting =+ amnt;
+    std::cout << "Station refilled with: " << amnt << " passangers" << std::endl;
+}
+
 void Station::shrinkPassangersByAmnt(int amnt){
     passangers_waiting -= amnt;
 }

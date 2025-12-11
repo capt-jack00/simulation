@@ -24,6 +24,7 @@ void Bus::collectPassengers(Station &station) {
             if(station.canBeShrinked()){
                 std::cout << "Bus took " << Bus::capacity << " passangers from station" << std::endl;
                 station.shrinkPassangersByAmnt(Bus::capacity);
+                peopleTransported += Bus::capacity;
                 std::cout << "Remaining passangers: " << station.getPassangersWaiting() << std::endl;
                 isBusy = true;
                 collectDay = day;
@@ -38,6 +39,7 @@ void Bus::collectPassengers(Station &station) {
         else if(station.getPassangersWaiting() < Bus::capacity){
             if(station.canBeShrinked()){
                 std::cout << "Bus took " << station.getPassangersWaiting() << " passangers from station" << std::endl;
+                peopleTransported += station.getPassangersWaiting();
                 station.shrinkPassangersToAmnt(0);
                 std::cout << "Remaining passangers: " << station.getPassangersWaiting() << std::endl;
                 isBusy = true;
